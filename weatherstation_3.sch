@@ -1,0 +1,613 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L isl333x:ISL3330 U11
+U 1 1 5B14D0E4
+P 4000 3000
+F 0 "U11" H 3550 4500 60  0000 C CNN
+F 1 "ISL3330" H 3700 1500 60  0000 C CNN
+F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 3800 3250 60  0001 C CNN
+F 3 "" H 3800 3250 60  0001 C CNN
+	1    4000 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14D6DB
+P 2950 5550
+AR Path="/5B14D6DB" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14D6DB" Ref="C35"  Part="1" 
+F 0 "C35" H 2960 5620 50  0000 L CNN
+F 1 "100nF" H 2960 5470 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 5550 50  0001 C CNN
+F 3 "" H 2950 5550 50  0001 C CNN
+	1    2950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5B14D78F
+P 2950 5650
+F 0 "#PWR0149" H 2950 5400 50  0001 C CNN
+F 1 "GND" H 2950 5500 50  0000 C CNN
+F 2 "" H 2950 5650 50  0001 C CNN
+F 3 "" H 2950 5650 50  0001 C CNN
+	1    2950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5B14D9CD
+P 2750 6900
+F 0 "#PWR0150" H 2750 6650 50  0001 C CNN
+F 1 "GND" H 2750 6750 50  0000 C CNN
+F 2 "" H 2750 6900 50  0001 C CNN
+F 3 "" H 2750 6900 50  0001 C CNN
+	1    2750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0151
+U 1 1 5B14D9E2
+P 2750 5300
+F 0 "#PWR0151" H 2750 5150 50  0001 C CNN
+F 1 "+3.3V" H 2750 5440 50  0000 C CNN
+F 2 "" H 2750 5300 50  0001 C CNN
+F 3 "" H 2750 5300 50  0001 C CNN
+	1    2750 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 6250 0    60   Input ~ 0
+CAN_RX
+Text GLabel 1700 6150 0    60   Input ~ 0
+CAN_TX
+$Comp
+L weatherstation-rescue:CPC1017N U?
+U 1 1 5B14E419
+P 4100 6800
+AR Path="/5B14E419" Ref="U?"  Part="1" 
+AR Path="/5B14BAD5/5B14E419" Ref="U12"  Part="1" 
+F 0 "U12" H 3900 7000 50  0000 L CNN
+F 1 "CPC1017N" H 4100 7000 50  0000 L CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 3900 6600 50  0001 L CIN
+F 3 "" H 4050 6800 50  0001 L CNN
+	1    4100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B14E796
+P 4650 6700
+AR Path="/5B14E796" Ref="R?"  Part="1" 
+AR Path="/5B14BAD5/5B14E796" Ref="R14"  Part="1" 
+F 0 "R14" V 4730 6700 50  0000 C CNN
+F 1 "113" V 4650 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6700 50  0001 C CNN
+F 3 "" H 4650 6700 50  0001 C CNN
+	1    4650 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0152
+U 1 1 5B14EAE3
+P 3700 5300
+F 0 "#PWR0152" H 3700 5150 50  0001 C CNN
+F 1 "+3.3V" H 3700 5440 50  0000 C CNN
+F 2 "" H 3700 5300 50  0001 C CNN
+F 3 "" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:2N7002 Q?
+U 1 1 5B14EB64
+P 3600 7150
+AR Path="/5B14EB64" Ref="Q?"  Part="1" 
+AR Path="/5B14BAD5/5B14EB64" Ref="Q1"  Part="1" 
+F 0 "Q1" H 3800 7225 50  0000 L CNN
+F 1 "NX3020NAK" H 3800 7150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 7075 50  0001 L CIN
+F 3 "" H 3600 7150 50  0001 L CNN
+	1    3600 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5B14EC1F
+P 3700 7350
+F 0 "#PWR0153" H 3700 7100 50  0001 C CNN
+F 1 "GND" H 3700 7200 50  0000 C CNN
+F 2 "" H 3700 7350 50  0001 C CNN
+F 3 "" H 3700 7350 50  0001 C CNN
+	1    3700 7350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 7150 0    60   Input ~ 0
+CAN_TERM
+Text GLabel 5300 6250 2    60   Input ~ 0
+CAN_H
+Text GLabel 5300 6450 2    60   Input ~ 0
+CAN_L
+Text GLabel 1700 6450 0    60   Input ~ 0
+CAN_STBY
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14F3C7
+P 4850 1750
+AR Path="/5B14F3C7" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14F3C7" Ref="C39"  Part="1" 
+F 0 "C39" H 4860 1820 50  0000 L CNN
+F 1 "100nF" H 4860 1670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4850 1750 50  0001 C CNN
+F 3 "" H 4850 1750 50  0001 C CNN
+	1    4850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14F6B8
+P 4850 2150
+AR Path="/5B14F6B8" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14F6B8" Ref="C40"  Part="1" 
+F 0 "C40" H 4860 2220 50  0000 L CNN
+F 1 "100nF" H 4860 2070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4850 2150 50  0001 C CNN
+F 3 "" H 4850 2150 50  0001 C CNN
+	1    4850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14F778
+P 3050 2300
+AR Path="/5B14F778" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14F778" Ref="C38"  Part="1" 
+F 0 "C38" H 3060 2370 50  0000 L CNN
+F 1 "100nF" H 3060 2220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 2300 50  0001 C CNN
+F 3 "" H 3050 2300 50  0001 C CNN
+	1    3050 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14F812
+P 3050 2050
+AR Path="/5B14F812" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14F812" Ref="C37"  Part="1" 
+F 0 "C37" H 3060 2120 50  0000 L CNN
+F 1 "100nF" H 3060 1970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 2050 50  0001 C CNN
+F 3 "" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B14F8D2
+P 3050 1650
+AR Path="/5B14F8D2" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B14F8D2" Ref="C36"  Part="1" 
+F 0 "C36" H 3060 1720 50  0000 L CNN
+F 1 "100nF" H 3060 1570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 1650 50  0001 C CNN
+F 3 "" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5B14FE24
+P 2750 2450
+F 0 "#PWR0154" H 2750 2200 50  0001 C CNN
+F 1 "GND" H 2750 2300 50  0000 C CNN
+F 2 "" H 2750 2450 50  0001 C CNN
+F 3 "" H 2750 2450 50  0001 C CNN
+	1    2750 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 2700 0    60   Input ~ 0
+USART2_RX
+Text GLabel 1900 3500 0    60   Input ~ 0
+USART2_TX
+$Comp
+L weatherstation-rescue:CPC1017N U?
+U 1 1 5B1517CC
+P 6250 3650
+AR Path="/5B1517CC" Ref="U?"  Part="1" 
+AR Path="/5B14BAD5/5B1517CC" Ref="U13"  Part="1" 
+F 0 "U13" H 6050 3850 50  0000 L CNN
+F 1 "CPC1017N" H 6250 3850 50  0000 L CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 6050 3450 50  0001 L CIN
+F 3 "" H 6200 3650 50  0001 L CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B1517D3
+P 6800 3550
+AR Path="/5B1517D3" Ref="R?"  Part="1" 
+AR Path="/5B14BAD5/5B1517D3" Ref="R16"  Part="1" 
+F 0 "R16" V 6880 3550 50  0000 C CNN
+F 1 "113" V 6800 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 3550 50  0001 C CNN
+F 3 "" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L weatherstation-rescue:2N7002 Q?
+U 1 1 5B1517DA
+P 5750 4000
+AR Path="/5B1517DA" Ref="Q?"  Part="1" 
+AR Path="/5B14BAD5/5B1517DA" Ref="Q2"  Part="1" 
+F 0 "Q2" H 5950 4075 50  0000 L CNN
+F 1 "NX3020NAK" H 5950 4000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 3925 50  0001 L CIN
+F 3 "" H 5750 4000 50  0001 L CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5B1517E1
+P 5850 4200
+F 0 "#PWR0155" H 5850 3950 50  0001 C CNN
+F 1 "GND" H 5850 4050 50  0000 C CNN
+F 2 "" H 5850 4200 50  0001 C CNN
+F 3 "" H 5850 4200 50  0001 C CNN
+	1    5850 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 4000 0    60   Input ~ 0
+RS485_TERM
+$Comp
+L power:GND #PWR0156
+U 1 1 5B1524EA
+P 4750 4400
+F 0 "#PWR0156" H 4750 4150 50  0001 C CNN
+F 1 "GND" H 4750 4250 50  0000 C CNN
+F 2 "" H 4750 4400 50  0001 C CNN
+F 3 "" H 4750 4400 50  0001 C CNN
+	1    4750 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 2700 2    60   Input ~ 0
+COMM_RS232_TX_RS485_D-
+Text GLabel 7450 3000 2    60   Input ~ 0
+COMM_RS232_RX_RS485_D+
+$Comp
+L power:+3.3V #PWR0157
+U 1 1 5B152DDD
+P 3250 1400
+F 0 "#PWR0157" H 3250 1250 50  0001 C CNN
+F 1 "+3.3V" H 3250 1540 50  0000 C CNN
+F 2 "" H 3250 1400 50  0001 C CNN
+F 3 "" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0158
+U 1 1 5B152EF6
+P 5850 1400
+F 0 "#PWR0158" H 5850 1250 50  0001 C CNN
+F 1 "+3.3V" H 5850 1540 50  0000 C CNN
+F 2 "" H 5850 1400 50  0001 C CNN
+F 3 "" H 5850 1400 50  0001 C CNN
+	1    5850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5450 2950 5350
+Wire Wire Line
+	2950 5350 2750 5350
+Wire Wire Line
+	2750 5300 2750 5350
+Connection ~ 2750 5350
+Wire Wire Line
+	2250 6150 1700 6150
+Wire Wire Line
+	2250 6250 1700 6250
+Wire Wire Line
+	2750 6900 2750 6800
+Wire Wire Line
+	3250 6250 4900 6250
+Wire Wire Line
+	3250 6450 5050 6450
+Wire Wire Line
+	4500 6700 4400 6700
+Wire Wire Line
+	4800 6700 4900 6700
+Wire Wire Line
+	4900 6700 4900 6250
+Wire Wire Line
+	5050 6450 5050 6900
+Wire Wire Line
+	5050 6900 4400 6900
+Connection ~ 4900 6250
+Connection ~ 5050 6450
+Wire Wire Line
+	3700 6700 3800 6700
+Wire Wire Line
+	3800 6900 3700 6900
+Wire Wire Line
+	3700 6900 3700 6950
+Wire Wire Line
+	3400 7150 3100 7150
+Wire Wire Line
+	4700 1850 4850 1850
+Wire Wire Line
+	4700 1650 4850 1650
+Wire Wire Line
+	4700 2050 4850 2050
+Wire Wire Line
+	4700 2250 4850 2250
+Wire Wire Line
+	3150 2050 3300 2050
+Wire Wire Line
+	3300 2300 3150 2300
+Wire Wire Line
+	3150 1650 3250 1650
+Wire Wire Line
+	3250 1650 3250 1400
+Connection ~ 3250 1650
+Wire Wire Line
+	2950 1650 2750 1650
+Wire Wire Line
+	2750 1650 2750 2050
+Wire Wire Line
+	2950 2300 2750 2300
+Connection ~ 2750 2300
+Wire Wire Line
+	2950 2050 2750 2050
+Connection ~ 2750 2050
+Wire Wire Line
+	1900 2700 3150 2700
+Wire Wire Line
+	1900 3500 3300 3500
+Wire Wire Line
+	3300 3000 3150 3000
+Wire Wire Line
+	3150 3000 3150 2700
+Connection ~ 3150 2700
+Wire Wire Line
+	6650 3550 6550 3550
+Wire Wire Line
+	7050 3550 6950 3550
+Wire Wire Line
+	7050 2700 7050 3550
+Wire Wire Line
+	7200 3000 7200 3750
+Wire Wire Line
+	7200 3750 6550 3750
+Wire Wire Line
+	5850 3550 5950 3550
+Wire Wire Line
+	5950 3750 5850 3750
+Wire Wire Line
+	5850 3750 5850 3800
+Connection ~ 7050 2700
+Wire Wire Line
+	4700 3500 4850 3500
+Wire Wire Line
+	4850 3500 4850 2700
+Connection ~ 4850 2700
+Wire Wire Line
+	4700 3800 4950 3800
+Wire Wire Line
+	4950 3800 4950 3000
+Connection ~ 4950 3000
+Wire Wire Line
+	5550 4000 5250 4000
+Wire Wire Line
+	4700 4350 4750 4350
+Wire Wire Line
+	4750 4350 4750 4400
+Wire Wire Line
+	4700 2700 4850 2700
+Wire Wire Line
+	4700 3000 4950 3000
+Connection ~ 7200 3000
+Wire Wire Line
+	2400 3150 2300 3150
+Wire Wire Line
+	3300 3950 2300 3950
+Wire Wire Line
+	2300 3950 2300 3150
+Connection ~ 2300 3150
+Wire Wire Line
+	3300 4250 3200 4250
+Text GLabel 1900 4250 0    60   Input ~ 0
+COMM_MODE
+Wire Wire Line
+	3300 4350 3200 4350
+Wire Wire Line
+	3200 4350 3200 4250
+Connection ~ 3200 4250
+$Comp
+L power:+3.3V #PWR0159
+U 1 1 5B153D90
+P 3300 3800
+F 0 "#PWR0159" H 3300 3650 50  0001 C CNN
+F 1 "+3.3V" H 3300 3940 50  0000 C CNN
+F 2 "" H 3300 3800 50  0001 C CNN
+F 3 "" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1900 3150 0    60   Input ~ 0
+USART2_DE
+$Comp
+L weatherstation-rescue:74AHC1G04 U?
+U 1 1 5B15436B
+P 2850 3150
+AR Path="/5B15436B" Ref="U?"  Part="1" 
+AR Path="/5B14BAD5/5B15436B" Ref="U10"  Part="1" 
+F 0 "U10" H 3045 3265 50  0000 C CNN
+F 1 "74AHC1G04" H 3150 3000 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2850 3150 50  0001 C CNN
+F 3 "" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 5B1544C6
+P 2800 3600
+F 0 "#PWR0160" H 2800 3350 50  0001 C CNN
+F 1 "GND" H 2800 3450 50  0000 C CNN
+F 2 "" H 2800 3600 50  0001 C CNN
+F 3 "" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:C_Small C?
+U 1 1 5B154738
+P 2600 2850
+AR Path="/5B154738" Ref="C?"  Part="1" 
+AR Path="/5B14BAD5/5B154738" Ref="C34"  Part="1" 
+F 0 "C34" H 2610 2920 50  0000 L CNN
+F 1 "100nF" H 2610 2770 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2600 2850 50  0001 C CNN
+F 3 "" H 2600 2850 50  0001 C CNN
+	1    2600 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0161
+U 1 1 5B154869
+P 2950 2850
+F 0 "#PWR0161" H 2950 2700 50  0001 C CNN
+F 1 "+3.3V" H 2950 2990 50  0000 C CNN
+F 2 "" H 2950 2850 50  0001 C CNN
+F 3 "" H 2950 2850 50  0001 C CNN
+	1    2950 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 2850 2800 2850
+Wire Wire Line
+	2800 2850 2800 2950
+Connection ~ 2800 2850
+$Comp
+L power:GND #PWR0162
+U 1 1 5B1549D6
+P 2350 2900
+F 0 "#PWR0162" H 2350 2650 50  0001 C CNN
+F 1 "GND" H 2350 2750 50  0000 C CNN
+F 2 "" H 2350 2900 50  0001 C CNN
+F 3 "" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2850 2350 2850
+Wire Wire Line
+	2350 2850 2350 2900
+Wire Wire Line
+	2800 3600 2800 3350
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B156C01
+P 3700 5800
+AR Path="/5B156C01" Ref="R?"  Part="1" 
+AR Path="/5B14BAD5/5B156C01" Ref="R13"  Part="1" 
+F 0 "R13" V 3780 5800 50  0000 C CNN
+F 1 "2.1k" V 3700 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 5800 50  0001 C CNN
+F 3 "" H 3700 5800 50  0001 C CNN
+	1    3700 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B156CE1
+P 5850 2100
+AR Path="/5B156CE1" Ref="R?"  Part="1" 
+AR Path="/5B14BAD5/5B156CE1" Ref="R15"  Part="1" 
+F 0 "R15" V 5930 2100 50  0000 C CNN
+F 1 "2.1k" V 5850 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 2100 50  0001 C CNN
+F 3 "" H 5850 2100 50  0001 C CNN
+	1    5850 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 3550 5850 2250
+Wire Wire Line
+	5850 1950 5850 1400
+Wire Wire Line
+	3700 6700 3700 5950
+Wire Wire Line
+	3700 5650 3700 5300
+Wire Wire Line
+	2750 5350 2750 5950
+Wire Wire Line
+	4900 6250 5300 6250
+Wire Wire Line
+	5050 6450 5300 6450
+Wire Wire Line
+	3250 1650 3300 1650
+Wire Wire Line
+	2750 2300 2750 2450
+Wire Wire Line
+	2750 2050 2750 2300
+Wire Wire Line
+	3150 2700 3300 2700
+Wire Wire Line
+	7050 2700 7450 2700
+Wire Wire Line
+	4850 2700 7050 2700
+Wire Wire Line
+	4950 3000 7200 3000
+Wire Wire Line
+	7200 3000 7450 3000
+Wire Wire Line
+	2300 3150 1900 3150
+Wire Wire Line
+	3200 4250 1900 4250
+Wire Wire Line
+	2800 2850 2950 2850
+Text Notes 3900 7050 0    50   ~ 0
+Rds = 7.1
+$Comp
+L Interface_CAN_LIN:TCAN330 U?
+U 1 1 5EA45E2B
+P 2750 6350
+F 0 "U?" H 2400 6700 50  0000 C CNN
+F 1 "TCAN330" H 3000 6700 50  0000 C CNN
+F 2 "" H 2750 5850 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tcan337.pdf" H 2750 6350 50  0001 C CNN
+	1    2750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6450 2250 6450
+Text Notes 6050 3900 0    50   ~ 0
+Rds = 7.1
+Wire Wire Line
+	2750 6800 2150 6800
+Wire Wire Line
+	2150 6800 2150 6550
+Wire Wire Line
+	2150 6550 2250 6550
+Connection ~ 2750 6800
+Wire Wire Line
+	2750 6800 2750 6750
+$EndSCHEMATC

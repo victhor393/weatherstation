@@ -1,0 +1,523 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L weatherstation-rescue:Conn_02x10_Odd_Even J?
+U 1 1 5B1DA6B0
+P 3850 5550
+AR Path="/5B1DA6B0" Ref="J?"  Part="1" 
+AR Path="/5B1D72FC/5B1DA6B0" Ref="J2"  Part="1" 
+F 0 "J2" H 3900 6050 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 3900 4950 50  0000 C CNN
+F 2 "cinch_enclosure:Cinch_ 5810120011_large" H 3850 5550 50  0001 C CNN
+F 3 "CINCH 581 01 20 011" H 3850 5550 50  0001 C CNN
+	1    3850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0172
+U 1 1 5B1DA9CC
+P 3550 5000
+F 0 "#PWR0172" H 3550 4900 50  0001 C CNN
+F 1 "+VDC" H 3550 5250 50  0000 C CNN
+F 2 "" H 3550 5000 50  0001 C CNN
+F 3 "" H 3550 5000 50  0001 C CNN
+	1    3550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0173
+U 1 1 5B1DAAC6
+P 3350 5000
+F 0 "#PWR0173" H 3350 4850 50  0001 C CNN
+F 1 "+5V" H 3350 5140 50  0000 C CNN
+F 2 "" H 3350 5000 50  0001 C CNN
+F 3 "" H 3350 5000 50  0001 C CNN
+	1    3350 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 5B1DAAE3
+P 4250 6350
+F 0 "#PWR0174" H 4250 6100 50  0001 C CNN
+F 1 "GND" H 4250 6200 50  0000 C CNN
+F 2 "" H 4250 6350 50  0001 C CNN
+F 3 "" H 4250 6350 50  0001 C CNN
+	1    4250 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 900  2    60   Input ~ 0
+CAN_H
+Text GLabel 3900 1100 2    60   Input ~ 0
+CAN_L
+Text GLabel 3000 1850 2    60   Input ~ 0
+COMM_RS232_TX_RS485_D-
+Text GLabel 3000 2050 2    60   Input ~ 0
+COMM_RS232_RX_RS485_D+
+$Comp
+L power:GND #PWR0175
+U 1 1 5B259AEA
+P 2800 1500
+F 0 "#PWR0175" H 2800 1250 50  0001 C CNN
+F 1 "GND" H 2800 1350 50  0000 C CNN
+F 2 "" H 2800 1500 50  0001 C CNN
+F 3 "" H 2800 1500 50  0001 C CNN
+	1    2800 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B25A14F
+P 2550 1850
+AR Path="/5B25A14F" Ref="R?"  Part="1" 
+AR Path="/5B1D72FC/5B25A14F" Ref="R19"  Part="1" 
+F 0 "R19" V 2630 1850 50  0000 C CNN
+F 1 "10" V 2550 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 1850 50  0001 C CNN
+F 3 "" H 2550 1850 50  0001 C CNN
+	1    2550 1850
+	0    -1   1    0   
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B25A1F8
+P 2550 2050
+AR Path="/5B25A1F8" Ref="R?"  Part="1" 
+AR Path="/5B1D72FC/5B25A1F8" Ref="R20"  Part="1" 
+F 0 "R20" V 2630 2050 50  0000 C CNN
+F 1 "10" V 2550 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 2050 50  0001 C CNN
+F 3 "" H 2550 2050 50  0001 C CNN
+	1    2550 2050
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0176
+U 1 1 5B25A450
+P 1900 2400
+F 0 "#PWR0176" H 1900 2150 50  0001 C CNN
+F 1 "GND" H 1900 2250 50  0000 C CNN
+F 2 "" H 1900 2400 50  0001 C CNN
+F 3 "" H 1900 2400 50  0001 C CNN
+	1    1900 2400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1750 5450 0    60   Input ~ 0
+DBG_TX
+Text GLabel 5850 5450 2    60   Input ~ 0
+DBG_RX
+Text Label 1600 900  0    60   ~ 0
+CAN_H_ESD
+Text Label 1600 1100 0    60   ~ 0
+CAN_L_ESD
+Text Label 700  1850 0    60   ~ 0
+RS485_D-_ESD
+Text Label 700  2050 0    60   ~ 0
+RS485_D+_ESD
+Text Label 1750 5250 0    60   ~ 0
+CAN_H_ESD
+Text Label 5850 5250 2    60   ~ 0
+CAN_L_ESD
+Text Label 1750 5350 0    60   ~ 0
+RS485_D-_ESD
+Text GLabel 1750 5550 0    60   Input ~ 0
+ADC_IN6
+Text GLabel 1750 5650 0    60   Input ~ 0
+ADC_IN8
+Text GLabel 5850 5650 2    60   Input ~ 0
+ADC_IN9
+Text GLabel 1750 5750 0    60   Input ~ 0
+AFE_AIN0
+Text GLabel 5850 5750 2    60   Input ~ 0
+AFE_AIN1
+Text GLabel 1750 5850 0    60   Input ~ 0
+AFE_AIN2
+Text GLabel 5850 5850 2    60   Input ~ 0
+AFE_AIN3
+Text GLabel 5850 5950 2    60   Input ~ 0
+DAC_OUT2
+Text GLabel 1750 5950 0    60   Input ~ 0
+RTD_ISRC_OUT
+Connection ~ 2350 900 
+Wire Wire Line
+	2350 1350 2350 900 
+Wire Wire Line
+	2450 1350 2350 1350
+Connection ~ 3200 1100
+Wire Wire Line
+	3200 1350 3200 1100
+Wire Wire Line
+	3150 1350 3200 1350
+Connection ~ 1450 1850
+Connection ~ 2300 2050
+Wire Wire Line
+	1450 2250 1550 2250
+Wire Wire Line
+	1450 1850 1450 2250
+Wire Wire Line
+	2400 1850 1450 1850
+Wire Wire Line
+	2400 2050 2300 2050
+Wire Wire Line
+	2300 2250 2300 2050
+Wire Wire Line
+	2250 2250 2300 2250
+Wire Wire Line
+	2700 2050 3000 2050
+Wire Wire Line
+	2700 1850 3000 1850
+Wire Wire Line
+	4150 5150 4250 5150
+Wire Wire Line
+	3650 5150 3550 5150
+Wire Wire Line
+	3550 5150 3550 5000
+Wire Wire Line
+	4250 5150 4250 6050
+Wire Wire Line
+	4150 6050 4250 6050
+Connection ~ 4250 6050
+Wire Wire Line
+	3350 6050 3650 6050
+Wire Wire Line
+	1750 5450 2850 5450
+Wire Wire Line
+	1750 5550 2850 5550
+Wire Wire Line
+	1750 5650 2850 5650
+Wire Wire Line
+	1750 5750 2850 5750
+Wire Wire Line
+	1750 5850 2850 5850
+Wire Wire Line
+	4750 5550 5850 5550
+Wire Wire Line
+	4750 5650 5850 5650
+Wire Wire Line
+	4750 5750 5850 5750
+Wire Wire Line
+	4750 5850 5850 5850
+Wire Wire Line
+	4750 5950 5850 5950
+Wire Wire Line
+	3350 5000 3350 6050
+Wire Wire Line
+	3300 900  2350 900 
+Wire Wire Line
+	3300 1100 3200 1100
+Wire Wire Line
+	2350 900  1600 900 
+Wire Wire Line
+	3200 1100 1600 1100
+Wire Wire Line
+	1450 1850 700  1850
+Wire Wire Line
+	2300 2050 700  2050
+Wire Wire Line
+	4250 6050 4250 6350
+$Comp
+L cm1213a-06so:CM1213A-06SO D7
+U 1 1 5BB0FC8D
+P 3900 4100
+F 0 "D7" H 3900 4800 50  0000 C CNN
+F 1 "CM1213A-06SO" H 3900 4700 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3425 3575 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/CM1213A-D.PDF" V 3825 4180 50  0001 C CNN
+	1    3900 4100
+	1    0    0    -1  
+$EndComp
+Text Label 5850 5350 2    60   ~ 0
+RS485_D+_ESD
+Wire Wire Line
+	4750 5450 5850 5450
+Text GLabel 5850 5550 2    60   Input ~ 0
+ADC_IN7
+Wire Wire Line
+	4100 4550 4450 4550
+Wire Wire Line
+	4100 4400 4450 4400
+Wire Wire Line
+	4100 4250 4450 4250
+Wire Wire Line
+	4100 4100 4250 4100
+Wire Wire Line
+	4250 4100 4250 5150
+Connection ~ 4250 5150
+Wire Wire Line
+	4100 3950 4450 3950
+Wire Wire Line
+	4100 3800 4450 3800
+Wire Wire Line
+	4100 3650 4450 3650
+$Comp
+L power:+3.3V #PWR0177
+U 1 1 5BB339DD
+P 3550 4000
+F 0 "#PWR0177" H 3550 3850 50  0001 C CNN
+F 1 "+3.3V" H 3550 4140 50  0000 C CNN
+F 2 "" H 3550 4000 50  0001 C CNN
+F 3 "" H 3550 4000 50  0001 C CNN
+	1    3550 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4100 3550 4100
+Wire Wire Line
+	3550 4100 3550 4000
+Text GLabel 4450 4550 2    60   Input ~ 0
+DBG_TX
+Text GLabel 4450 4400 2    60   Input ~ 0
+DBG_RX
+Text GLabel 4450 4250 2    60   Input ~ 0
+ADC_IN6
+Text GLabel 4450 3950 2    60   Input ~ 0
+ADC_IN7
+Text GLabel 4450 3800 2    60   Input ~ 0
+ADC_IN8
+Text GLabel 4450 3650 2    60   Input ~ 0
+ADC_IN9
+$Comp
+L cm1213a-06so:CM1213A-06SO D8
+U 1 1 5BB3D6AB
+P 5800 4100
+F 0 "D8" H 5800 4800 50  0000 C CNN
+F 1 "CM1213A-06SO" H 5800 4700 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5325 3575 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/CM1213A-D.PDF" V 5725 4180 50  0001 C CNN
+	1    5800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0178
+U 1 1 5BB3D76B
+P 5400 4000
+F 0 "#PWR0178" H 5400 3850 50  0001 C CNN
+F 1 "+3.3V" H 5400 4140 50  0000 C CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4000 5400 4100
+Wire Wire Line
+	5400 4100 5600 4100
+Wire Wire Line
+	6000 4550 6450 4550
+Wire Wire Line
+	6000 4400 6450 4400
+Wire Wire Line
+	6000 4250 6450 4250
+Wire Wire Line
+	6000 3950 6450 3950
+Wire Wire Line
+	6000 3800 6450 3800
+Wire Wire Line
+	6000 3650 6450 3650
+$Comp
+L power:GND #PWR0179
+U 1 1 5BB45DEF
+P 6100 4700
+F 0 "#PWR0179" H 6100 4450 50  0001 C CNN
+F 1 "GND" H 6100 4550 50  0000 C CNN
+F 2 "" H 6100 4700 50  0001 C CNN
+F 3 "" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4100 6100 4100
+Wire Wire Line
+	6100 4100 6100 4700
+Text GLabel 6450 4550 2    60   Input ~ 0
+AFE_AIN0
+Text GLabel 6450 4400 2    60   Input ~ 0
+AFE_AIN1
+Text GLabel 6450 4250 2    60   Input ~ 0
+AFE_AIN2
+Text GLabel 6450 3950 2    60   Input ~ 0
+AFE_AIN3
+Text GLabel 6450 3800 2    60   Input ~ 0
+RTD_ISRC_OUT
+Text GLabel 6450 3650 2    60   Input ~ 0
+DAC_OUT2
+$Comp
+L Device:D_TVS D3
+U 1 1 5BB47C86
+P 1700 2250
+F 0 "D3" H 1700 2466 50  0000 C CNN
+F 1 "WE_824501700" H 1700 2375 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 1700 2250 50  0001 C CNN
+F 3 "~" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D4
+U 1 1 5BB47CFA
+P 2100 2250
+F 0 "D4" H 2100 2050 50  0000 C CNN
+F 1 "WE_824501700" H 2250 2150 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 2100 2250 50  0001 C CNN
+F 3 "~" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2250 1900 2250
+Wire Wire Line
+	1900 2400 1900 2250
+Connection ~ 1900 2250
+Wire Wire Line
+	1900 2250 1950 2250
+$Comp
+L Device:D_TVS D5
+U 1 1 5BB4B5C1
+P 2600 1350
+F 0 "D5" H 2600 1566 50  0000 C CNN
+F 1 "WE_824501361" H 2600 1475 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 2600 1350 50  0001 C CNN
+F 3 "~" H 2600 1350 50  0001 C CNN
+	1    2600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D6
+U 1 1 5BB4B69F
+P 3000 1350
+F 0 "D6" H 3100 1150 50  0000 C CNN
+F 1 "WE_824501361" H 3100 1250 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 3000 1350 50  0001 C CNN
+F 3 "~" H 3000 1350 50  0001 C CNN
+	1    3000 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1350 2800 1350
+Wire Wire Line
+	2800 1350 2800 1500
+Connection ~ 2800 1350
+Wire Wire Line
+	2800 1350 2750 1350
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5BB0D7C5
+P 3450 900
+AR Path="/5BB0D7C5" Ref="R?"  Part="1" 
+AR Path="/5B1D72FC/5BB0D7C5" Ref="R21"  Part="1" 
+F 0 "R21" V 3530 900 50  0000 C CNN
+F 1 "10" V 3450 900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 900 50  0001 C CNN
+F 3 "" H 3450 900 50  0001 C CNN
+	1    3450 900 
+	0    -1   1    0   
+$EndComp
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5BB0D81B
+P 3450 1100
+AR Path="/5BB0D81B" Ref="R?"  Part="1" 
+AR Path="/5B1D72FC/5BB0D81B" Ref="R22"  Part="1" 
+F 0 "R22" V 3530 1100 50  0000 C CNN
+F 1 "10" V 3450 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 1100 50  0001 C CNN
+F 3 "" H 3450 1100 50  0001 C CNN
+	1    3450 1100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3600 1100 3900 1100
+Wire Wire Line
+	3600 900  3900 900 
+Wire Wire Line
+	2850 5950 1750 5950
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5EE118E0
+P 3050 5650
+F 0 "RN?" V 2633 5650 50  0000 C CNN
+F 1 "330" V 2724 5650 50  0000 C CNN
+F 2 "" V 3325 5650 50  0001 C CNN
+F 3 "~" H 3050 5650 50  0001 C CNN
+	1    3050 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5EE2799A
+P 4550 5650
+F 0 "RN?" V 4133 5650 50  0000 C CNN
+F 1 "330" V 4224 5650 50  0000 C CNN
+F 2 "" V 4825 5650 50  0001 C CNN
+F 3 "~" H 4550 5650 50  0001 C CNN
+	1    4550 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 5250 3650 5250
+Wire Wire Line
+	1750 5350 3650 5350
+Wire Wire Line
+	3250 5450 3650 5450
+Wire Wire Line
+	3250 5550 3650 5550
+Wire Wire Line
+	3250 5650 3650 5650
+Wire Wire Line
+	3250 5750 3650 5750
+Wire Wire Line
+	4350 5450 4150 5450
+Wire Wire Line
+	4150 5350 5850 5350
+Wire Wire Line
+	4150 5250 5850 5250
+Wire Wire Line
+	4350 5550 4150 5550
+Wire Wire Line
+	4150 5650 4350 5650
+Wire Wire Line
+	4350 5750 4150 5750
+$Comp
+L Device:R_Pack02 RN?
+U 1 1 5EE49444
+P 3050 5950
+F 0 "RN?" V 3250 5950 50  0000 C CNN
+F 1 "330" V 3150 5950 50  0000 C CNN
+F 2 "" V 3225 5950 50  0001 C CNN
+F 3 "~" H 3050 5950 50  0001 C CNN
+	1    3050 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack02 RN?
+U 1 1 5EE4B065
+P 4550 5950
+F 0 "RN?" V 4750 5950 50  0000 C CNN
+F 1 "330" V 4650 5950 50  0000 C CNN
+F 2 "" V 4725 5950 50  0001 C CNN
+F 3 "~" H 4550 5950 50  0001 C CNN
+	1    4550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5850 4150 5850
+Wire Wire Line
+	4350 5950 4150 5950
+Wire Wire Line
+	3250 5950 3650 5950
+Wire Wire Line
+	3650 5850 3250 5850
+$EndSCHEMATC
