@@ -155,17 +155,6 @@ F 3 "" H 2150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead FB1
-U 1 1 5EEEE995
-P 5100 3350
-F 0 "FB1" V 4826 3350 50  0000 C CNN
-F 1 "180R/100M" V 4917 3350 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 5030 3350 50  0001 C CNN
-F 3 "~" H 5100 3350 50  0001 C CNN
-	1    5100 3350
-	0    1    1    0   
-$EndComp
-$Comp
 L weatherstation-rescue:C_Small C?
 U 1 1 5EEEEF1A
 P 4300 3500
@@ -250,4 +239,15 @@ Wire Notes Line
 	4200 3900 4200 2900
 Text Notes 4150 2850 0    50   ~ 0
 Circuit copied from Rock64 schematic
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5EEEE995
+P 5100 3350
+F 0 "FB1" V 4826 3350 50  0000 C CNN
+F 1 "180R/100M" V 4917 3350 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 5030 3350 50  0001 C CNN
+F 3 "~" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -172,7 +172,7 @@ U 1 1 5F10D3F3
 P 6400 1800
 F 0 "J2" H 6580 1802 50  0000 L CNN
 F 1 "DB9_Female_MountingHoles" H 6580 1711 50  0000 L CNN
-F 2 "" H 6400 1800 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6400 1800 50  0001 C CNN
 F 3 " ~" H 6400 1800 50  0001 C CNN
 	1    6400 1800
 	1    0    0    -1  
@@ -370,23 +370,23 @@ Wire Wire Line
 Wire Wire Line
 	7850 3400 8450 3400
 $Comp
-L Connector:Screw_Terminal_01x08 J?
+L Connector:Screw_Terminal_01x08 J3
 U 1 1 5F1B3607
 P 8650 3700
-F 0 "J?" H 8730 3692 50  0000 L CNN
+F 0 "J3" H 8730 3692 50  0000 L CNN
 F 1 "Screw_Terminal_01x08" H 8730 3601 50  0000 L CNN
-F 2 "" H 8650 3700 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 8650 3700 50  0001 C CNN
 F 3 "~" H 8650 3700 50  0001 C CNN
 	1    8650 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x08 J?
+L Connector:Screw_Terminal_01x08 J4
 U 1 1 5F1B4997
 P 8650 4600
-F 0 "J?" H 8730 4592 50  0000 L CNN
+F 0 "J4" H 8730 4592 50  0000 L CNN
 F 1 "Screw_Terminal_01x08" H 8730 4501 50  0000 L CNN
-F 2 "" H 8650 4600 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 8650 4600 50  0001 C CNN
 F 3 "~" H 8650 4600 50  0001 C CNN
 	1    8650 4600
 	1    0    0    -1  
