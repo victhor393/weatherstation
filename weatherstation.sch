@@ -96,17 +96,17 @@ Wire Wire Line
 	6050 3700 6700 3700
 Text GLabel 6700 3600 2    50   Input ~ 0
 SPI_CSN0_M2
-Text GLabel 6700 3500 2    50   Input ~ 0
+Text GLabel 6700 3700 2    50   Input ~ 0
 INT1_ACCEL
 Wire Wire Line
 	6700 3500 6050 3500
-Text GLabel 6700 3700 2    50   Input ~ 0
+Text GLabel 6700 3500 2    50   Input ~ 0
 ~DRDY~_AFE
 Text GLabel 6700 4000 2    50   Input ~ 0
 ~DRDY_SNSR
 Wire Wire Line
 	6700 4000 6050 4000
-Text GLabel 6700 4200 2    50   Input ~ 0
+Text GLabel 4900 4100 0    50   Input ~ 0
 ALERT_HUMID
 Wire Wire Line
 	6700 4200 6050 4200
@@ -114,11 +114,11 @@ Text GLabel 4900 3900 0    50   Input ~ 0
 COMM_MODE
 Wire Wire Line
 	5550 3900 4900 3900
-Text GLabel 4900 4100 0    50   Input ~ 0
+Text GLabel 4900 3100 0    50   Input ~ 0
 RS485_TERM
 Wire Wire Line
 	5550 4100 4900 4100
-Text GLabel 4900 3100 0    50   Input ~ 0
+Text GLabel 6700 4200 2    50   Input ~ 0
 SNSR_HEAT
 Wire Wire Line
 	4900 3100 5550 3100
@@ -232,4 +232,59 @@ F 3 "" H 6150 4550 50  0001 C CNN
 	1    6150 4550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J5
+U 1 1 5EE92B92
+P 8100 3000
+F 0 "J5" H 8150 3717 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 8150 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 8100 3000 50  0001 C CNN
+F 3 "~" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 3500 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	7900 3500 7650 3500
+$Comp
+L power:GND #PWR0123
+U 1 1 5EE9A9E2
+P 7850 3700
+F 0 "#PWR0123" H 7850 3450 50  0001 C CNN
+F 1 "GND" H 7855 3527 50  0000 C CNN
+F 2 "" H 7850 3700 50  0001 C CNN
+F 3 "" H 7850 3700 50  0001 C CNN
+	1    7850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5EE9AFE4
+P 8450 3700
+F 0 "#PWR0143" H 8450 3450 50  0001 C CNN
+F 1 "GND" H 8455 3527 50  0000 C CNN
+F 2 "" H 8450 3700 50  0001 C CNN
+F 3 "" H 8450 3700 50  0001 C CNN
+	1    8450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2800 7850 2800
+Wire Wire Line
+	7850 2800 7850 3200
+Wire Wire Line
+	7900 3200 7850 3200
+Connection ~ 7850 3200
+Wire Wire Line
+	7850 3200 7850 3700
+Wire Wire Line
+	8400 3200 8450 3200
+Wire Wire Line
+	8450 3200 8450 3700
+Wire Wire Line
+	8400 2800 8450 2800
+Wire Wire Line
+	8450 2800 8450 3200
+Connection ~ 8450 3200
 $EndSCHEMATC

@@ -20,62 +20,48 @@ COMM_RS232_RX_RS485_D+
 $Comp
 L weatherstation-rescue:R R?
 U 1 1 5B25A14F
-P 4100 1600
+P 5350 1600
 AR Path="/5B25A14F" Ref="R?"  Part="1" 
 AR Path="/5B1D72FC/5B25A14F" Ref="R19"  Part="1" 
-F 0 "R19" V 4180 1600 50  0000 C CNN
-F 1 "10" V 4100 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 1600 50  0001 C CNN
-F 3 "" H 4100 1600 50  0001 C CNN
-	1    4100 1600
+F 0 "R19" V 5430 1600 50  0000 C CNN
+F 1 "10" V 5350 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 1600 50  0001 C CNN
+F 3 "" H 5350 1600 50  0001 C CNN
+	1    5350 1600
 	0    1    1    0   
 $EndComp
 $Comp
 L weatherstation-rescue:R R?
 U 1 1 5B25A1F8
-P 4100 1800
+P 5350 1800
 AR Path="/5B25A1F8" Ref="R?"  Part="1" 
 AR Path="/5B1D72FC/5B25A1F8" Ref="R20"  Part="1" 
-F 0 "R20" V 4180 1800 50  0000 C CNN
-F 1 "10" V 4100 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 1800 50  0001 C CNN
-F 3 "" H 4100 1800 50  0001 C CNN
-	1    4100 1800
+F 0 "R20" V 5430 1800 50  0000 C CNN
+F 1 "10" V 5350 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 1800 50  0001 C CNN
+F 3 "" H 5350 1800 50  0001 C CNN
+	1    5350 1800
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0176
 U 1 1 5B25A450
-P 4750 2650
-F 0 "#PWR0176" H 4750 2400 50  0001 C CNN
-F 1 "GND" H 4750 2500 50  0000 C CNN
-F 2 "" H 4750 2650 50  0001 C CNN
-F 3 "" H 4750 2650 50  0001 C CNN
-	1    4750 2650
+P 4600 2650
+F 0 "#PWR0176" H 4600 2400 50  0001 C CNN
+F 1 "GND" H 4600 2500 50  0000 C CNN
+F 2 "" H 4600 2650 50  0001 C CNN
+F 3 "" H 4600 2650 50  0001 C CNN
+	1    4600 2650
 	1    0    0    -1  
 $EndComp
-Text Label 5950 1600 2    60   ~ 0
+Text Label 6350 1600 2    60   ~ 0
 RS485_D-_ESD
-Text Label 5950 1800 2    60   ~ 0
+Text Label 6350 1800 2    60   ~ 0
 RS485_D+_ESD
-Connection ~ 5200 1600
-Connection ~ 4350 1800
 Wire Wire Line
-	5200 2000 5100 2000
+	4200 2000 4200 1800
 Wire Wire Line
-	5200 1600 5200 2000
-Wire Wire Line
-	4250 1600 5200 1600
-Wire Wire Line
-	4250 1800 4350 1800
-Wire Wire Line
-	4350 2000 4350 1800
-Wire Wire Line
-	4400 2000 4350 2000
-Wire Wire Line
-	3950 1800 3650 1800
-Wire Wire Line
-	3950 1600 3650 1600
+	4250 2000 4200 2000
 Wire Wire Line
 	4100 4400 4450 4400
 Wire Wire Line
@@ -92,18 +78,18 @@ Wire Wire Line
 	3700 4100 3550 4100
 Wire Wire Line
 	3550 4100 3550 4000
-Text GLabel 4450 4400 2    60   Input ~ 0
+Text GLabel 6450 4700 2    60   Input ~ 0
 AFE_AIN6
-Text GLabel 4450 4250 2    60   Input ~ 0
+Text GLabel 6450 4550 2    60   Input ~ 0
 AFE_AIN7
 Text GLabel 4450 3950 2    60   Input ~ 0
-REFP0
-Text GLabel 4450 3800 2    60   Input ~ 0
 REFN0
-Text GLabel 4450 3650 2    60   Input ~ 0
+Text GLabel 4450 3800 2    60   Input ~ 0
 REFP1
-Text GLabel 4450 3500 2    60   Input ~ 0
+Text GLabel 4450 3650 2    60   Input ~ 0
 REFN1
+Text GLabel 4450 3500 2    60   Input ~ 0
+REFP0
 Wire Wire Line
 	5400 4000 5400 4100
 Wire Wire Line
@@ -133,59 +119,43 @@ F 3 "" H 6100 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 4100 6100 4100
-Text GLabel 6450 4400 2    60   Input ~ 0
+Text GLabel 4450 4700 2    60   Input ~ 0
 AFE_AIN0
-Text GLabel 6450 4250 2    60   Input ~ 0
+Text GLabel 4450 4550 2    60   Input ~ 0
 AFE_AIN1
-Text GLabel 6450 3650 2    60   Input ~ 0
+Text GLabel 4450 4400 2    60   Input ~ 0
 AFE_AIN4
-Text GLabel 6450 3500 2    60   Input ~ 0
+Text GLabel 4450 4250 2    60   Input ~ 0
 AFE_AIN5
 $Comp
 L Device:D_TVS D3
 U 1 1 5BB47C86
-P 4950 2000
-F 0 "D3" H 4950 2216 50  0000 C CNN
-F 1 "WE_824501700" H 4950 2125 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 4950 2000 50  0001 C CNN
-F 3 "~" H 4950 2000 50  0001 C CNN
-	1    4950 2000
+P 4800 2000
+F 0 "D3" H 4800 2216 50  0000 C CNN
+F 1 "WE_824501700" H 4800 2125 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 4800 2000 50  0001 C CNN
+F 3 "~" H 4800 2000 50  0001 C CNN
+	1    4800 2000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 2000 4750 2000
-Connection ~ 4750 2000
+	4650 2000 4600 2000
+Connection ~ 4600 2000
 Wire Wire Line
-	4750 2000 4700 2000
-Wire Wire Line
-	5200 1600 6100 1600
-Wire Wire Line
-	4350 1800 6100 1800
-Wire Wire Line
-	6100 2200 4750 2200
-Wire Wire Line
-	4750 2000 4750 2200
-Connection ~ 4750 2200
+	4600 2000 4550 2000
 $Comp
 L Connector:DB9_Female_MountingHoles J2
 U 1 1 5F10D3F3
-P 6400 1800
-F 0 "J2" H 6580 1802 50  0000 L CNN
-F 1 "DB9_Female_MountingHoles" H 6580 1711 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6400 1800 50  0001 C CNN
-F 3 " ~" H 6400 1800 50  0001 C CNN
-	1    6400 1800
+P 6800 1800
+F 0 "J2" H 6980 1802 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 6980 1711 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6800 1800 50  0001 C CNN
+F 3 " ~" H 6800 1800 50  0001 C CNN
+	1    6800 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2550 6400 2550
-Wire Wire Line
-	6400 2550 6400 2400
-Wire Wire Line
-	4750 2650 4750 2550
-Wire Wire Line
-	4750 2200 4750 2550
-Connection ~ 4750 2550
+	6800 2550 6800 2400
 $Comp
 L power:+2V8 #PWR0137
 U 1 1 5F118551
@@ -238,24 +208,24 @@ Wire Wire Line
 	6000 4700 6450 4700
 Wire Wire Line
 	6000 3500 6450 3500
-Text GLabel 6450 3800 2    60   Input ~ 0
+Text GLabel 6450 4250 2    60   Input ~ 0
 AFE_AIN3
-Text GLabel 6450 3950 2    60   Input ~ 0
+Text GLabel 6450 4400 2    60   Input ~ 0
 AFE_AIN2
 $Comp
 L Device:D_TVS D4
 U 1 1 5BB47CFA
-P 4550 2000
-F 0 "D4" H 4550 1800 50  0000 C CNN
-F 1 "WE_824501700" H 4700 1900 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 4550 2000 50  0001 C CNN
-F 3 "~" H 4550 2000 50  0001 C CNN
-	1    4550 2000
+P 4400 2000
+F 0 "D4" H 4400 1800 50  0000 C CNN
+F 1 "WE_824501700" H 4550 1900 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 4400 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
 	-1   0    0    -1  
 $EndComp
-Text GLabel 6450 4550 2    60   Input ~ 0
+Text GLabel 6450 3500 2    60   Input ~ 0
 IEXC2
-Text GLabel 6450 4700 2    60   Input ~ 0
+Text GLabel 6450 3650 2    60   Input ~ 0
 IEXC1
 $Comp
 L power:GND #PWR0140
@@ -272,27 +242,27 @@ Wire Wire Line
 	4250 4100 4250 4900
 Text GLabel 8200 3500 0    60   Input ~ 0
 REFP0
-Text GLabel 8200 3600 0    60   Input ~ 0
+Text GLabel 8200 3800 0    60   Input ~ 0
 REFN0
 Text GLabel 8200 3700 0    60   Input ~ 0
 REFP1
-Text GLabel 8200 3800 0    60   Input ~ 0
+Text GLabel 8200 3600 0    60   Input ~ 0
 REFN1
-Text GLabel 8200 4000 0    60   Input ~ 0
-AFE_AIN6
-Text GLabel 8200 3900 0    60   Input ~ 0
-AFE_AIN7
-Text GLabel 8200 4300 0    60   Input ~ 0
-AFE_AIN4
-Text GLabel 8200 4100 0    60   Input ~ 0
-AFE_AIN5
 Text GLabel 8200 4400 0    60   Input ~ 0
+AFE_AIN6
+Text GLabel 8200 4700 0    60   Input ~ 0
+AFE_AIN7
+Text GLabel 8200 4100 0    60   Input ~ 0
+AFE_AIN4
+Text GLabel 8200 4300 0    60   Input ~ 0
+AFE_AIN5
+Text GLabel 7500 5050 0    60   Input ~ 0
 AFE_AIN3
 Text GLabel 8200 4500 0    60   Input ~ 0
 AFE_AIN2
-Text GLabel 8200 4700 0    60   Input ~ 0
+Text GLabel 8200 3900 0    60   Input ~ 0
 AFE_AIN0
-Text GLabel 8200 4600 0    60   Input ~ 0
+Text GLabel 8200 4000 0    60   Input ~ 0
 AFE_AIN1
 Text GLabel 8200 4800 0    60   Input ~ 0
 IEXC2
@@ -367,19 +337,119 @@ Wire Wire Line
 	7550 3400 7400 3400
 Wire Wire Line
 	7400 3400 7400 3300
-Wire Wire Line
-	7850 3400 8450 3400
 $Comp
-L Connector:Screw_Terminal_01x08 J3
-U 1 1 5F1B3607
-P 8650 3700
-F 0 "J3" H 8730 3692 50  0000 L CNN
-F 1 "Screw_Terminal_01x08" H 8730 3601 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 8650 3700 50  0001 C CNN
-F 3 "~" H 8650 3700 50  0001 C CNN
-	1    8650 3700
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EECFEB5
+P 2050 4100
+F 0 "H4" H 2150 4149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 4058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2050 4100 50  0001 C CNN
+F 3 "~" H 2050 4100 50  0001 C CNN
+	1    2050 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EED01AE
+P 2050 3750
+F 0 "H3" H 2150 3799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 3708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2050 3750 50  0001 C CNN
+F 3 "~" H 2050 3750 50  0001 C CNN
+	1    2050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EED06F2
+P 1600 3750
+F 0 "H1" H 1700 3799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1700 3708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 1600 3750 50  0001 C CNN
+F 3 "~" H 1600 3750 50  0001 C CNN
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EED0A13
+P 1600 4100
+F 0 "H2" H 1700 4149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1700 4058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 1600 4100 50  0001 C CNN
+F 3 "~" H 1600 4100 50  0001 C CNN
+	1    1600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 5EED4770
+P 1850 4350
+F 0 "#PWR0144" H 1850 4100 50  0001 C CNN
+F 1 "GND" H 1850 4200 50  0000 C CNN
+F 2 "" H 1850 4350 50  0001 C CNN
+F 3 "" H 1850 4350 50  0001 C CNN
+	1    1850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4200 1600 4300
+Wire Wire Line
+	1600 4300 1850 4300
+Wire Wire Line
+	1850 4300 1850 4350
+Wire Wire Line
+	1850 4300 2050 4300
+Wire Wire Line
+	2050 4300 2050 4200
+Connection ~ 1850 4300
+Wire Wire Line
+	1850 4300 1850 3900
+Wire Wire Line
+	1850 3900 1600 3900
+Wire Wire Line
+	1600 3900 1600 3850
+Wire Wire Line
+	1850 3900 2050 3900
+Wire Wire Line
+	2050 3900 2050 3850
+Connection ~ 1850 3900
+Wire Wire Line
+	4600 2000 4600 2200
+Wire Wire Line
+	3650 1800 4200 1800
+Wire Wire Line
+	3650 1600 5100 1600
+Wire Wire Line
+	5500 1600 6500 1600
+Wire Wire Line
+	6500 1800 5500 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	4950 2000 5100 2000
+Wire Wire Line
+	4600 2200 6500 2200
+Connection ~ 4600 2200
+Wire Wire Line
+	4600 2200 4600 2550
+Wire Wire Line
+	4600 2550 6800 2550
+Connection ~ 4600 2550
+Wire Wire Line
+	4600 2550 4600 2650
+Wire Wire Line
+	4200 1800 5200 1800
+Wire Wire Line
+	5100 2000 5100 1600
+Connection ~ 5100 1600
+Wire Wire Line
+	5100 1600 5200 1600
+Wire Wire Line
+	4450 4700 4100 4700
+Wire Wire Line
+	4100 4550 4450 4550
+Wire Wire Line
+	7850 3400 8450 3400
 $Comp
 L Connector:Screw_Terminal_01x08 J4
 U 1 1 5F1B4997
@@ -389,6 +459,17 @@ F 1 "Screw_Terminal_01x08" H 8730 4501 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 8650 4600 50  0001 C CNN
 F 3 "~" H 8650 4600 50  0001 C CNN
 	1    8650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x08 J3
+U 1 1 5F1B3607
+P 8650 3700
+F 0 "J3" H 8730 3692 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 8730 3601 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 8650 3700 50  0001 C CNN
+F 3 "~" H 8650 3700 50  0001 C CNN
+	1    8650 3700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

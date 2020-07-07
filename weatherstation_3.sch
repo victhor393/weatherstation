@@ -101,35 +101,9 @@ F 3 "" H 3950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 3450 0    60   Input ~ 0
-USART2_RX
+GPIO3_A6
 Text GLabel 3100 4250 0    60   Input ~ 0
-USART2_TX
-$Comp
-L weatherstation-rescue:CPC1017N U?
-U 1 1 5B1517CC
-P 7450 4400
-AR Path="/5B1517CC" Ref="U?"  Part="1" 
-AR Path="/5B14BAD5/5B1517CC" Ref="U13"  Part="1" 
-F 0 "U13" H 7250 4600 50  0000 L CNN
-F 1 "CPC1017N" H 7450 4600 50  0000 L CNN
-F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 7250 4200 50  0001 L CIN
-F 3 "" H 7400 4400 50  0001 L CNN
-	1    7450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L weatherstation-rescue:R R?
-U 1 1 5B1517D3
-P 8000 4300
-AR Path="/5B1517D3" Ref="R?"  Part="1" 
-AR Path="/5B14BAD5/5B1517D3" Ref="R16"  Part="1" 
-F 0 "R16" V 8080 4300 50  0000 C CNN
-F 1 "113" V 8000 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 4300 50  0001 C CNN
-F 3 "" H 8000 4300 50  0001 C CNN
-	1    8000 4300
-	0    1    1    0   
-$EndComp
+GPIO3_A4
 $Comp
 L weatherstation-rescue:2N7002 Q?
 U 1 1 5B1517DA
@@ -230,23 +204,6 @@ Wire Wire Line
 	4350 3750 4350 3450
 Connection ~ 4350 3450
 Wire Wire Line
-	7850 4300 7750 4300
-Wire Wire Line
-	8250 4300 8150 4300
-Wire Wire Line
-	8250 3450 8250 4300
-Wire Wire Line
-	8400 3750 8400 4500
-Wire Wire Line
-	8400 4500 7750 4500
-Wire Wire Line
-	7050 4300 7150 4300
-Wire Wire Line
-	7150 4500 7050 4500
-Wire Wire Line
-	7050 4500 7050 4550
-Connection ~ 8250 3450
-Wire Wire Line
 	5900 4250 6050 4250
 Wire Wire Line
 	6050 4250 6050 3450
@@ -266,9 +223,6 @@ Wire Wire Line
 	5900 3450 6050 3450
 Wire Wire Line
 	5900 3750 6150 3750
-Connection ~ 8400 3750
-Wire Wire Line
-	3600 3900 3500 3900
 Wire Wire Line
 	4500 4700 3500 4700
 Wire Wire Line
@@ -295,77 +249,7 @@ F 3 "" H 4500 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 3100 3900 0    60   Input ~ 0
-USART2_DE
-$Comp
-L weatherstation-rescue:74AHC1G04 U?
-U 1 1 5B15436B
-P 4050 3900
-AR Path="/5B15436B" Ref="U?"  Part="1" 
-AR Path="/5B14BAD5/5B15436B" Ref="U10"  Part="1" 
-F 0 "U10" H 4245 4015 50  0000 C CNN
-F 1 "74AHC1G04" H 4350 3750 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4050 3900 50  0001 C CNN
-F 3 "" H 4050 3900 50  0001 C CNN
-	1    4050 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0160
-U 1 1 5B1544C6
-P 4000 4350
-F 0 "#PWR0160" H 4000 4100 50  0001 C CNN
-F 1 "GND" H 4000 4200 50  0000 C CNN
-F 2 "" H 4000 4350 50  0001 C CNN
-F 3 "" H 4000 4350 50  0001 C CNN
-	1    4000 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L weatherstation-rescue:C_Small C?
-U 1 1 5B154738
-P 3800 3600
-AR Path="/5B154738" Ref="C?"  Part="1" 
-AR Path="/5B14BAD5/5B154738" Ref="C34"  Part="1" 
-F 0 "C34" H 3810 3670 50  0000 L CNN
-F 1 "100nF" H 3810 3520 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3800 3600 50  0001 C CNN
-F 3 "" H 3800 3600 50  0001 C CNN
-	1    3800 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0161
-U 1 1 5B154869
-P 4150 3600
-F 0 "#PWR0161" H 4150 3450 50  0001 C CNN
-F 1 "+3.3V" H 4150 3740 50  0000 C CNN
-F 2 "" H 4150 3600 50  0001 C CNN
-F 3 "" H 4150 3600 50  0001 C CNN
-	1    4150 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 3600 4000 3600
-Wire Wire Line
-	4000 3600 4000 3700
-Connection ~ 4000 3600
-$Comp
-L power:GND #PWR0162
-U 1 1 5B1549D6
-P 3550 3650
-F 0 "#PWR0162" H 3550 3400 50  0001 C CNN
-F 1 "GND" H 3550 3500 50  0000 C CNN
-F 2 "" H 3550 3650 50  0001 C CNN
-F 3 "" H 3550 3650 50  0001 C CNN
-	1    3550 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 3600 3550 3600
-Wire Wire Line
-	3550 3600 3550 3650
-Wire Wire Line
-	4000 4350 4000 4100
+GPIO3_A5
 $Comp
 L weatherstation-rescue:R R?
 U 1 1 5B156CE1
@@ -380,8 +264,6 @@ F 3 "" H 7050 2850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7050 4300 7050 3000
-Wire Wire Line
 	7050 2700 7050 2150
 Wire Wire Line
 	4450 2400 4500 2400
@@ -392,19 +274,65 @@ Wire Wire Line
 Wire Wire Line
 	4350 3450 4500 3450
 Wire Wire Line
-	8250 3450 8650 3450
-Wire Wire Line
-	6050 3450 8250 3450
-Wire Wire Line
-	6150 3750 8400 3750
-Wire Wire Line
-	8400 3750 8650 3750
-Wire Wire Line
 	3500 3900 3100 3900
 Wire Wire Line
 	4400 5000 3100 5000
 Wire Wire Line
-	4000 3600 4150 3600
+	3500 3900 4500 3900
+$Comp
+L weatherstation-rescue:R R?
+U 1 1 5B1517D3
+P 8150 4500
+AR Path="/5B1517D3" Ref="R?"  Part="1" 
+AR Path="/5B14BAD5/5B1517D3" Ref="R16"  Part="1" 
+F 0 "R16" V 8230 4500 50  0000 C CNN
+F 1 "113" V 8150 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4500 50  0001 C CNN
+F 3 "" H 8150 4500 50  0001 C CNN
+	1    8150 4500
+	0    1    1    0   
+$EndComp
 Text Notes 7250 4650 0    50   ~ 0
 Rds = 7.1
+$Comp
+L weatherstation-rescue:CPC1017N U?
+U 1 1 5B1517CC
+P 7450 4400
+AR Path="/5B1517CC" Ref="U?"  Part="1" 
+AR Path="/5B14BAD5/5B1517CC" Ref="U13"  Part="1" 
+F 0 "U13" H 7250 4600 50  0000 L CNN
+F 1 "CPC1017N" H 7450 4600 50  0000 L CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 7250 4200 50  0001 L CIN
+F 3 "" H 7400 4400 50  0001 L CNN
+	1    7450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4300 7050 3000
+Wire Wire Line
+	7050 4300 7150 4300
+Wire Wire Line
+	7050 4500 7050 4550
+Wire Wire Line
+	7150 4500 7050 4500
+Wire Wire Line
+	8400 3750 8650 3750
+Wire Wire Line
+	6150 3750 8400 3750
+Connection ~ 8400 3750
+Wire Wire Line
+	8400 3750 8400 4500
+Wire Wire Line
+	6050 3450 8250 3450
+Wire Wire Line
+	8250 3450 8650 3450
+Connection ~ 8250 3450
+Wire Wire Line
+	8250 3450 8250 4300
+Wire Wire Line
+	8400 4500 8300 4500
+Wire Wire Line
+	8250 4300 7750 4300
+Wire Wire Line
+	7750 4500 8000 4500
 $EndSCHEMATC

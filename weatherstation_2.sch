@@ -112,17 +112,6 @@ F 3 "" H 6700 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0126
-U 1 1 5B13AC38
-P 6700 1650
-F 0 "#PWR0126" H 6700 1400 50  0001 C CNN
-F 1 "GND" H 6700 1500 50  0000 C CNN
-F 2 "" H 6700 1650 50  0001 C CNN
-F 3 "" H 6700 1650 50  0001 C CNN
-	1    6700 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L sensirion-humidity:SHT3x-DIS U7
 U 1 1 5B13B42F
 P 8800 1550
@@ -251,8 +240,6 @@ F 3 "" H 8150 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 1000 4900 1250
-Wire Wire Line
 	5350 1350 5250 1350
 Wire Wire Line
 	4900 1650 5250 1650
@@ -261,7 +248,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 1600 4900 1650
 Connection ~ 5250 1650
-Connection ~ 4900 1250
 Connection ~ 4900 1650
 Wire Wire Line
 	6650 1250 7100 1250
@@ -272,8 +258,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 1450 6650 1450
 Wire Wire Line
-	6650 1650 6700 1650
-Wire Wire Line
 	8150 2150 8150 1850
 Wire Wire Line
 	8300 1750 8150 1750
@@ -283,8 +267,6 @@ Wire Wire Line
 Connection ~ 8150 1850
 Wire Wire Line
 	8300 1250 8150 1250
-Wire Wire Line
-	8150 1000 8150 1050
 Connection ~ 8150 1250
 Wire Wire Line
 	9300 1250 9750 1250
@@ -309,18 +291,9 @@ Wire Wire Line
 Wire Wire Line
 	9300 1850 9750 1850
 Wire Wire Line
-	8150 1050 9350 1050
-Wire Wire Line
-	9350 1050 9350 1450
-Connection ~ 8150 1050
-Wire Wire Line
-	9350 1450 9300 1450
-Wire Wire Line
 	5250 1350 5250 1400
 Wire Wire Line
 	5250 1650 5350 1650
-Wire Wire Line
-	4900 1250 4900 1400
 Wire Wire Line
 	4900 1650 4900 2150
 Wire Wire Line
@@ -329,8 +302,6 @@ Wire Wire Line
 	8150 1850 8150 1750
 Wire Wire Line
 	8150 1250 8150 1350
-Wire Wire Line
-	8150 1050 8150 1250
 $Comp
 L weatherstation-rescue:C_Small C?
 U 1 1 5BB52FD4
@@ -359,17 +330,6 @@ F 3 "" H 2900 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 2000 2900 1750
-$Comp
-L power:+3.3VA #PWR0147
-U 1 1 5BB24A45
-P 6900 1550
-F 0 "#PWR0147" H 6900 1400 50  0001 C CNN
-F 1 "+3.3VA" H 6900 1690 50  0000 C CNN
-F 2 "" H 6900 1550 50  0001 C CNN
-F 3 "" H 6900 1550 50  0001 C CNN
-	1    6900 1550
-	0    1    1    0   
-$EndComp
 $Comp
 L sgx-sensortech:MICS-4514 U3
 U 1 1 5E64368D
@@ -504,15 +464,15 @@ Wire Wire Line
 Wire Wire Line
 	3700 6550 4150 6550
 Wire Wire Line
-	1650 6150 2300 6150
-Text Label 1650 6150 0    50   ~ 0
+	1650 6450 2300 6450
+Text Label 1650 6450 0    50   ~ 0
 RsOX_Isrc
 Wire Wire Line
-	2300 6250 1650 6250
-Text Label 1650 6250 0    50   ~ 0
+	2300 6550 1650 6550
+Text Label 1650 6550 0    50   ~ 0
 RsOX_Isrc
 Wire Wire Line
-	2300 6450 1650 6450
+	2300 6150 1650 6150
 Wire Wire Line
 	5800 5750 5600 5750
 Wire Wire Line
@@ -531,11 +491,11 @@ $EndComp
 Connection ~ 5600 5750
 Text Label 7650 5750 2    50   ~ 0
 RsRED_Isrc
-Text Label 1650 6450 0    50   ~ 0
+Text Label 1650 6150 0    50   ~ 0
 RsRED_Isrc
 Wire Wire Line
-	2300 6550 1650 6550
-Text Label 1650 6550 0    50   ~ 0
+	2300 6250 1650 6250
+Text Label 1650 6250 0    50   ~ 0
 RsRED_Isrc
 $Comp
 L Device:R R1
@@ -648,8 +608,6 @@ Wire Wire Line
 Connection ~ 5150 5500
 Wire Wire Line
 	5150 5500 5150 6600
-Wire Wire Line
-	4900 1250 5350 1250
 $Comp
 L power:+3.3V #PWR0112
 U 1 1 5EA51893
@@ -858,17 +816,6 @@ F 3 "" H 6550 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+2V8 #PWR0119
-U 1 1 5EEF62C9
-P 4900 1000
-F 0 "#PWR0119" H 4900 850 50  0001 C CNN
-F 1 "+2V8" H 4915 1173 50  0000 C CNN
-F 2 "" H 4900 1000 50  0001 C CNN
-F 3 "" H 4900 1000 50  0001 C CNN
-	1    4900 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+2V8 #PWR0120
 U 1 1 5EEF6EE7
 P 3000 1350
@@ -910,21 +857,6 @@ Text GLabel 9250 5400 0    50   Input ~ 0
 I2C0_SDA
 Text GLabel 9250 5500 0    50   Input ~ 0
 I2C0_SCL
-$Comp
-L power:+3.3V #PWR0123
-U 1 1 5EF7246B
-P 4600 6550
-F 0 "#PWR0123" H 4600 6400 50  0001 C CNN
-F 1 "+3.3V" H 4600 6690 50  0000 C CNN
-F 2 "" H 4600 6550 50  0001 C CNN
-F 3 "" H 4600 6550 50  0001 C CNN
-	1    4600 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 6650 4600 6550
-Wire Wire Line
-	3700 6650 4600 6650
 Text GLabel 4200 2500 2    50   Input ~ 0
 SPI_TXD_M2
 Text GLabel 4200 2400 2    50   Input ~ 0
@@ -1003,23 +935,14 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0133
 U 1 1 5F050DB1
-P 4000 3200
-F 0 "#PWR0133" H 4000 3050 50  0001 C CNN
-F 1 "+3.3V" H 4000 3340 50  0000 C CNN
-F 2 "" H 4000 3200 50  0001 C CNN
-F 3 "" H 4000 3200 50  0001 C CNN
-	1    4000 3200
+P 4000 3300
+F 0 "#PWR0133" H 4000 3150 50  0001 C CNN
+F 1 "+3.3V" H 4000 3440 50  0000 C CNN
+F 2 "" H 4000 3300 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+	1    4000 3300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4000 3200 3800 3200
-Wire Wire Line
-	3700 3300 3800 3300
-Wire Wire Line
-	3800 3300 3800 3200
-Connection ~ 3800 3200
-Wire Wire Line
-	3800 3200 3700 3200
 Connection ~ 2900 1750
 Wire Wire Line
 	2900 1750 2900 1450
@@ -1102,4 +1025,53 @@ Wire Wire Line
 	2300 4000 1900 4000
 Wire Wire Line
 	2300 4100 1900 4100
+Wire Wire Line
+	3700 3300 4000 3300
+Wire Wire Line
+	3700 3200 4200 3200
+Text GLabel 4200 3200 2    50   Input ~ 0
+~RESET
+Text GLabel 4150 6650 2    31   Input ~ 0
+~RESET
+Wire Wire Line
+	4150 6650 3700 6650
+Wire Wire Line
+	8150 1000 8150 1250
+Text GLabel 9750 1450 2    50   Input ~ 0
+~RESET
+Wire Wire Line
+	9300 1450 9750 1450
+$Comp
+L power:+3.3V #PWR0146
+U 1 1 5EF1FF5A
+P 6900 1550
+F 0 "#PWR0146" H 6900 1400 50  0001 C CNN
+F 1 "+3.3V" H 6900 1690 50  0000 C CNN
+F 2 "" H 6900 1550 50  0001 C CNN
+F 3 "" H 6900 1550 50  0001 C CNN
+	1    6900 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1250 4900 1250
+Wire Wire Line
+	4900 1400 4900 1250
+$Comp
+L power:+2V8 #PWR0119
+U 1 1 5EF3051C
+P 4900 1000
+F 0 "#PWR0119" H 4900 850 50  0001 C CNN
+F 1 "+2V8" H 4915 1173 50  0000 C CNN
+F 2 "" H 4900 1000 50  0001 C CNN
+F 3 "" H 4900 1000 50  0001 C CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1250 4900 1000
+Connection ~ 4900 1250
+Text GLabel 7100 1650 2    50   Input ~ 0
+~RESET
+Wire Wire Line
+	6650 1650 7100 1650
 $EndSCHEMATC
