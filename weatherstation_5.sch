@@ -250,15 +250,15 @@ Text GLabel 8200 3600 0    60   Input ~ 0
 REFN1
 Text GLabel 8200 4400 0    60   Input ~ 0
 AFE_AIN6
-Text GLabel 8200 4700 0    60   Input ~ 0
+Text GLabel 8200 4500 0    60   Input ~ 0
 AFE_AIN7
 Text GLabel 8200 4100 0    60   Input ~ 0
 AFE_AIN4
 Text GLabel 8200 4300 0    60   Input ~ 0
 AFE_AIN5
-Text GLabel 7500 5050 0    60   Input ~ 0
+Text GLabel 8200 4700 0    60   Input ~ 0
 AFE_AIN3
-Text GLabel 8200 4500 0    60   Input ~ 0
+Text GLabel 8200 4600 0    60   Input ~ 0
 AFE_AIN2
 Text GLabel 8200 3900 0    60   Input ~ 0
 AFE_AIN0

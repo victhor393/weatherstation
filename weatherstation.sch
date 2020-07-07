@@ -127,19 +127,6 @@ Text GLabel 4900 4300 0    50   Input ~ 0
 Wire Wire Line
 	5550 4300 4900 4300
 Wire Wire Line
-	5550 3300 5350 3300
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5F104D14
-P 5350 3300
-F 0 "#PWR0101" H 5350 3150 50  0001 C CNN
-F 1 "+3.3V" V 5365 3428 50  0000 L CNN
-F 2 "" H 5350 3300 50  0001 C CNN
-F 3 "" H 5350 3300 50  0001 C CNN
-	1    5350 3300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	5550 2500 5350 2500
 $Comp
 L power:+3.3V #PWR0102
